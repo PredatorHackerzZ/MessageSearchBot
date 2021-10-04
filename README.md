@@ -41,7 +41,7 @@ We have to use Bot for Inline Search & Userbot for Searching in Channels. So bot
         
 👮 <b>Dev</b>
 
-  [@𝐀𝐛𝐢𝐫𝐇𝐚𝐬𝐚𝐧𝟐𝟎𝟎𝟓](https://t.me/AbirHasan2005) 
+  [@𝐀𝐛𝐢𝐫𝐇𝐚𝐬𝐚𝐧𝟐𝟎𝟎𝟓](https://github.com/AbirHasan2005) 
 
 👲 <b>Co-DEV</b>
 
