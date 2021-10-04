@@ -5,9 +5,27 @@ I made this for [@𝐏𝐇𝐋𝐢𝐬𝐭𝐁𝐨𝐭](https://t.me/PHListBot).
 
 We have to use Bot for Inline Search & Userbot for Searching in Channels. So both Bot & Userbot will work together.
 
-## Deploy to Heroku:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PredatorHackerzZ/Message-Search-Bot)
+## Installation
 
+<details><summary><b>Deploy to Heroku</b></summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/PredatorHackerzZ/MessageSearchBot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+</details>
+
+<details>
+  <summary><b>Deploy to Railway</b></summary>
+<br/>
+
+<p align="left">
+<a href="https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FPredatorHackerzZ%2FMessageSearchBot"
+">
+     <img height="30px" src="https://railway.app/button.svg">
+  </a>
+</p>
 ### Support Group:
 **<a href="https://t.me/TeleRoid14"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>**
 ![Configs](https://telegra.ph/file/033408792afc4d4f1f8f6.png) 🤖
