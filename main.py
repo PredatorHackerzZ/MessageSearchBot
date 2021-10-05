@@ -69,16 +69,18 @@ async def inline_handlers(_, event: InlineQuery):
             if message.text:
                 thumb = None
                 f_text = message.text
+                msg_text = message.text.html
                 if "|||" in message.text:
                     thumb = message.text.split("|||",1)[1].strip()
                     f_text = message.text.split("|||",1)[0]
+                    msg_text = message.text.html.split("|||",1)[0]
                 answers.append(InlineQueryResultArticle(
                     title="{}".format(f_text.split("\n", 1)[0]),
                     description="{}".format(f_text.split("\n", 2)[-1]),
                     thumb_url=thumb,
                     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝐒𝐞𝐚𝐫𝐜𝐡 𝐀𝐠𝐚𝐢𝐧", switch_inline_query_current_chat=""), InlineKeyboardButton("𝐆𝐨 𝐈𝐧𝐥𝐢𝐧𝐞", switch_inline_query="")]]),
                     input_message_content=InputTextMessageContent(
-                        message_text=message.text.split("|||",1)[0].html,
+                        message_text=msg_text,
                         parse_mode="html",
                         disable_web_page_preview=True
                     )
