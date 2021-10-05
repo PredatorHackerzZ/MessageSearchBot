@@ -67,6 +67,6 @@ Choose Bot category 😎
 
     START_MSG = """<b>𝐇𝐞𝐥𝐥𝐨!, {}, 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐀𝐧 𝐀𝐦𝐚𝐳𝐢𝐧𝐠 𝐈𝐧𝐥𝐢𝐧𝐞 𝐁𝐨𝐭 𝐒𝐞𝐚𝐫𝐜𝐡 𝐑𝐨𝐛𝐨𝐭 𝐭𝐡𝐚𝐭 𝐟𝐢𝐧𝐝𝐬 𝐀𝐦𝐚𝐳𝐢𝐧𝐠 𝐁𝐨𝐭𝐬 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐨𝐧 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦.</b>
 
-<b>𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 𝐓𝐡𝐢𝐬 𝐑𝐞𝐩𝐨:</b> <a href='https://t.me/MoviesFlixers_DL'>𝐆𝐢𝐭𝐡𝐮𝐛 𝐑𝐞𝐩𝐨</a>
+<b>𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 𝐓𝐡𝐢𝐬 𝐑𝐞𝐩𝐨:</b> @MoviesFlixers_DL
 
 𝐌𝐚𝐝𝐞 𝐰𝐢𝐭𝐡 ❤ 𝐅𝐫𝐨𝐦 <a href='https://t.me/PredatorHackerzZ'>@𝐓𝐡𝐞𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝</a>"""
