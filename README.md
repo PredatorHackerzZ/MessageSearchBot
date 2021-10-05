@@ -43,6 +43,8 @@ We have to use Bot for Inline Search & Userbot for Searching in Channels. So bot
 
   [@𝐀𝐛𝐢𝐫𝐇𝐚𝐬𝐚𝐧𝟐𝟎𝟎𝟓](https://github.com/AbirHasan2005) 
 
+  [@𝐉𝐢𝐠𝐚𝐫𝐕𝐚𝐫𝐦𝐚𝟐𝟎𝟎𝟓](https://github.com/JigarVarma2005) 
+
 👲 <b>Co-DEV</b>
 
 <p align="middle">
