@@ -70,7 +70,7 @@ async def inline_handlers(_, event: InlineQuery):
                 thumb = None
                 f_text = message.text
                 if "|||" in message.text:
-                    thumb = message.text.split("|||",1)[1]
+                    thumb = message.text.split("|||",1)[1].strip()
                     f_text = message.text.split("|||",1)[0]
                 answers.append(InlineQueryResultArticle(
                     title="{}".format(f_text.split("\n", 1)[0]),
