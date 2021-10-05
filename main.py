@@ -47,12 +47,12 @@ async def inline_handlers(_, event: InlineQuery):
     if event.query == "":
         answers.append(
             InlineQueryResultArticle(
-                title="This is Inline Messages Search Bot!",
-                description="You can search Channel All Messages using this bot.",
+                title="𝐓𝐡𝐢𝐬 𝐢𝐬 𝐁𝐨𝐭 𝐢𝐧𝐥𝐢𝐧𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐁𝐨𝐭!🔍",
+                description="𝐘𝐨𝐮 𝐜𝐚𝐧 𝐬𝐞𝐚𝐫𝐜𝐡 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐥 𝐁𝐨𝐭𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩 𝐮𝐬𝐢𝐧𝐠 𝐭𝐡𝐢𝐬 𝐛𝐨𝐭.",
                 thumb_url="https://telegra.ph/file/a73b6eccf89106fb918e5.jpg", 
                 input_message_content=InputTextMessageContent(
                     message_text="𝐔𝐬𝐢𝐧𝐠 𝐭𝐡𝐢𝐬 𝐁𝐨𝐭 𝐲𝐨𝐮 𝐜𝐚𝐧 𝐒𝐞𝐚𝐫𝐜𝐡 𝐚𝐥𝐥 𝐭𝐡𝐞 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝 𝐁𝐨𝐭𝐋𝐢𝐬𝐭 𝐁𝐨𝐭 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦.\n\n"
-                                 "**Made by the Owner @PredatorHackerzZ**\n**@TheTeleRoid**",
+                                 "**𝐌𝐚𝐝𝐞 𝐛𝐲 𝐭𝐡𝐞 𝐎𝐰𝐧𝐞𝐫 @PredatorHackerzZ**\n**@TheTeleRoid**",
                     disable_web_page_preview=True
                 ),
                 reply_markup=InlineKeyboardMarkup([
@@ -114,7 +114,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton("📢 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://t.me/Moviesflixers_DL")
 					],
 					[
 						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="About_msg"),
