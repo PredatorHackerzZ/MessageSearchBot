@@ -10,8 +10,7 @@ class Config(object):
     BOT_SESSION_NAME = os.environ.get("BOT_SESSION_NAME", "PHListBot")
     USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", "")
     CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -100))
-    ABOUT_BOT_TEXT = """
-<b𝐓𝐡𝐢𝐬 𝐢𝐬 𝐀 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝 𝐁𝐨𝐭𝐋𝐢𝐬𝐭 𝐒𝐞𝐚𝐫𝐜𝐡 𝐁𝐨𝐭 𝐎𝐟 @TheTeleRoid 𝐀𝐧𝐝 𝐒𝐨𝐦𝐞 𝐎𝐭𝐡𝐞𝐫 𝐁𝐨𝐭𝐬 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦.
+    ABOUT_BOT_TEXT = """<b>𝐓𝐡𝐢𝐬 𝐢𝐬 𝐀 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝 𝐁𝐨𝐭𝐋𝐢𝐬𝐭 𝐒𝐞𝐚𝐫𝐜𝐡 𝐁𝐨𝐭 𝐎𝐟 @TheTeleRoid 𝐀𝐧𝐝 𝐒𝐨𝐦𝐞 𝐎𝐭𝐡𝐞𝐫 𝐁𝐨𝐭𝐬 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦.
 
 🤖 𝗠𝘆 𝗡𝗮𝗺𝗲: <a href='https://t.me/PHListBot'>@𝐏𝐇𝐋𝐢𝐬𝐭𝐁𝐨𝐭</a>
 
@@ -31,17 +30,17 @@ class Config(object):
 """
     
     ABOUT_HELP_TEXT = """<b>👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: <a href='https://t.me/PredatorHackerzZ'>@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫𝐇𝐚𝐜𝐤𝐞𝐫𝐳𝐙</a>
-Choose Bot category 😎
-☛ RENAME_BOTS
+📕 ᴄʜᴏᴏsᴇ ʙᴏᴛ ᴄᴀᴛᴇɢᴏʀʏ 
+☛ RENAMER_BOTS
 ☛ FILE_TO_LINK_BOTS
 ☛ GDRIVE_BOTS
 ☛ URL_UPLOADER_BOTS
 ☛ GROUP_MANAGER_BOTS
-☛ MUSIC_SONGS_BOTS
-☛ YOUTUBE_BOTS
+☛ ZEE5_DOWNLOADER_BOTS
+☛ YOUTUBE_DOWNLOADER_BOTS
 ☛ FILE_CONVERTOR_BOTS
-☛ USEFUL_BOTS
-☛ LINK_TO_FILE_BOTS
+☛ INSTAGRAM_BOTS
+☛ UNZIP_BOTS
 
 𝗧𝗵𝗲𝗿𝗲 𝗮𝗿𝗲 𝗺𝘂𝗹𝘁𝗶𝗽𝗹𝗲 𝘁𝗵𝗶𝗻𝗴𝘀 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 𝗰𝗮𝗻 𝗱𝗼 :-
 
