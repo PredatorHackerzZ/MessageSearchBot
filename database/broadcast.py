@@ -1,15 +1,23 @@
 # (c) @PredatorHackerzZ
 
+import os
 import time
 import string
 import random
+import asyncio
 import datetime
 import aiofiles
-import asyncio
 import traceback
-import aiofiles.os
-from configs import Config
+from sample_config import Config
+from database.access_db import db
+from pyrogram.types import Message
+from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
+
+if bool(os.environ.get("WEBHOOK", False)):
+    from sample_config import Config
+else:
+    from config import Config
 
 broadcast_ids = {}
 
@@ -19,7 +27,7 @@ async def send_msg(user_id, message):
         if Config.BROADCAST_AS_COPY is False:
             await message.forward(chat_id=user_id)
         elif Config.BROADCAST_AS_COPY is True:
-            await message.copy(chat_id=user_id)
+            await message.forward(chat_id=user_id)
         return 200, None
     except FloodWait as e:
         await asyncio.sleep(e.x)
@@ -34,7 +42,8 @@ async def send_msg(user_id, message):
         return 500, f"{user_id} : {traceback.format_exc()}\n"
 
 
-async def main_broadcast_handler(m, db):
+@Client.on_message(filters.command(["broadcast"]) & filters.user(Config.OWNER_ID) & filters.reply)
+async def broadcast_handler(_, m: Message):
     all_users = await db.get_all_users()
     broadcast_msg = m.reply_to_message
     while True:
@@ -96,4 +105,4 @@ async def main_broadcast_handler(m, db):
             caption=f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.",
             quote=True
         )
-    await aiofiles.os.remove('broadcast.txt')
+    os.remove('broadcast.txt')
