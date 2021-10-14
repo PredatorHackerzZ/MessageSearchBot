@@ -27,6 +27,22 @@
         "BOT_TOKEN": {
             "description": "Get this from @BotFather"
         },
+        "BOT_USERNAME": {
+            "description": "Your Bot Username which you sent to @BotFather (Without [@])"
+        },
+        "BROADCAST_AS_COPY": {
+            "description": "Nothing to Put here."
+        },
+        "BOT_OWNER": {
+            "description": "Bot Owner UserID"
+        },
+        "DATABASE_URL": {
+            "description": "MongoDB Database URI for Saving UserID for Broadcast."
+        },
+        "UPDATES_CHANNEL": {
+            "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -100123456789",
+            "required": false
+        },
         "CHANNEL_ID": {
             "description": "Channel ID for Searching Messages."
         }
