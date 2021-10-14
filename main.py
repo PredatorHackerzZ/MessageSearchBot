@@ -4,6 +4,9 @@
 # I first made this for @TGBotListBot ...
 # Edit according to your use.
 
+from database.access_db import db
+from database.add_user import AddUserToDatabase
+
 from configs import Config
 from pyrogram import Client, filters, idle
 from pyrogram.errors import QueryIdInvalid
