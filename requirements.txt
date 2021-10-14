@@ -1,2 +1,6 @@
 pyrogram
 TgCrypto
+motor
+aiofiles
+dnspython
+psutil
