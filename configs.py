@@ -10,6 +10,12 @@ class Config(object):
     BOT_SESSION_NAME = os.environ.get("BOT_SESSION_NAME", "PHListBot")
     USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", "")
     CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -100))
+    BOT_USERNAME = os.environ.get("BOT_USERNAME")
+    BOT_OWNER = int(os.environ.get("BOT_OWNER"))
+    DATABASE_URL = os.environ.get("DATABASE_URL")
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
+    BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
+    BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
     ABOUT_BOT_TEXT = """<b>𝐓𝐡𝐢𝐬 𝐢𝐬 𝐀 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝 𝐁𝐨𝐭𝐋𝐢𝐬𝐭 𝐒𝐞𝐚𝐫𝐜𝐡 𝐁𝐨𝐭 𝐎𝐟 @TheTeleRoid 𝐀𝐧𝐝 𝐒𝐨𝐦𝐞 𝐎𝐭𝐡𝐞𝐫 𝐁𝐨𝐭𝐬 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦.
 
 🤖 𝗠𝘆 𝗡𝗮𝗺𝗲: <a href='https://t.me/PHListBot'>@𝐏𝐇𝐋𝐢𝐬𝐭𝐁𝐨𝐭</a>
