@@ -1,6 +1,6 @@
 # (c) @PredatorHackerzZ
 
-from sample_config import Config
-from database.database import Database
+from configs import Config
+from database.db import Database
 
 db = Database(Config.MONGODB_URI, Config.SESSION_NAME)
