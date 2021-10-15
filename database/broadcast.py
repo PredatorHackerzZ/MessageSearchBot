@@ -8,7 +8,7 @@ import asyncio
 import datetime
 import aiofiles
 import traceback
-from sample_config import Config
+from configs import Config
 from database.access_db import db
 from pyrogram.types import Message
 from pyrogram import Client, filters
@@ -17,7 +17,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
-    from config import Config
+    from configs import Config
 
 broadcast_ids = {}
 
