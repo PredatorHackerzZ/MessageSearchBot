@@ -1,6 +1,6 @@
 # (c) @PredatorHackerzZ
 
-from sample_config import Config
+from configs import Config
 from database.access_db import db
 from pyrogram import Client
 from pyrogram.types import Message
