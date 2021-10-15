@@ -1,9 +1,68 @@
-# (c) @PredatorHackerzZ
-
+import os
+import threading
 import datetime
 import motor.motor_asyncio
-from configs import Config
 
+from sqlalchemy import create_engine
+from sqlalchemy import Column, Integer
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, scoped_session
+
+
+if bool(os.environ.get("WEBHOOK", False)):
+    from sample_config import Config
+else:
+    from config import Config
+
+
+def start() -> scoped_session:
+    engine = create_engine(Config.DB_URI, client_encoding="utf8")
+    BASE.metadata.bind = engine
+    BASE.metadata.create_all(engine)
+    return scoped_session(sessionmaker(bind=engine, autoflush=False))
+
+
+BASE = declarative_base()
+SESSION = start()
+
+INSERTION_LOCK = threading.RLock()
+
+class Thumbnail(BASE):
+    __tablename__ = "thumbnail"
+    id = Column(Integer, primary_key=True)
+    msg_id = Column(Integer)
+    
+    def __init__(self, id, msg_id):
+        self.id = id
+        self.msg_id = msg_id
+
+Thumbnail.__table__.create(checkfirst=True)
+
+async def df_thumb(id, msg_id):
+    with INSERTION_LOCK:
+        msg = SESSION.query(Thumbnail).get(id)
+        if not msg:
+            msg = Thumbnail(id, msg_id)
+            SESSION.add(msg)
+            SESSION.flush()
+        else:
+            SESSION.delete(msg)
+            file = Thumbnail(id, msg_id)
+            SESSION.add(file)
+        SESSION.commit()
+
+async def del_thumb(id):
+    with INSERTION_LOCK:
+        msg = SESSION.query(Thumbnail).get(id)
+        SESSION.delete(msg)
+        SESSION.commit()
+
+async def thumb(id):
+    try:
+        t = SESSION.query(Thumbnail).get(id)
+        return t
+    finally:
+        SESSION.close()
 
 class Database:
 
@@ -16,12 +75,10 @@ class Database:
         return dict(
             id=id,
             join_date=datetime.date.today().isoformat(),
-            ban_status=dict(
-                is_banned=False,
-                ban_duration=0,
-                banned_on=datetime.date.max.isoformat(),
-                ban_reason=''
-            )
+            prefix=None,
+            upload_as_doc=True,
+            thumbnail=None,
+            caption=None
         )
 
     async def add_user(self, id):
@@ -43,37 +100,30 @@ class Database:
     async def delete_user(self, user_id):
         await self.col.delete_many({'id': int(user_id)})
 
-    async def remove_ban(self, id):
-        ban_status = dict(
-            is_banned=False,
-            ban_duration=0,
-            banned_on=datetime.date.max.isoformat(),
-            ban_reason=''
-        )
-        await self.col.update_one({'id': id}, {'$set': {'ban_status': ban_status}})
+    async def set_prefix(self, id, prefix):
+        await self.col.update_one({'id': id}, {'$set': {'prefix': prefix}})
 
-    async def ban_user(self, user_id, ban_duration, ban_reason):
-        ban_status = dict(
-            is_banned=True,
-            ban_duration=ban_duration,
-            banned_on=datetime.date.today().isoformat(),
-            ban_reason=ban_reason
-        )
-        await self.col.update_one({'id': user_id}, {'$set': {'ban_status': ban_status}})
-
-    async def get_ban_status(self, id):
-        default = dict(
-            is_banned=False,
-            ban_duration=0,
-            banned_on=datetime.date.max.isoformat(),
-            ban_reason=''
-        )
+    async def get_prefix(self, id):
         user = await self.col.find_one({'id': int(id)})
-        return user.get('ban_status', default)
+        return user.get('prefix', None)
 
-    async def get_all_banned_users(self):
-        banned_users = self.col.find({'ban_status.is_banned': True})
-        return banned_users
+    async def set_upload_as_doc(self, id, upload_as_doc):
+        await self.col.update_one({'id': id}, {'$set': {'upload_as_doc': upload_as_doc}})
 
+    async def get_upload_as_doc(self, id):
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('upload_as_doc', False)
 
-db = Database(Config.DATABASE_URL, Config.BOT_USERNAME)
+    async def set_thumbnail(self, id, thumbnail):
+        await self.col.update_one({'id': id}, {'$set': {'thumbnail': thumbnail}})
+
+    async def get_thumbnail(self, id):
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('thumbnail', None)
+
+    async def set_caption(self, id, caption):
+        await self.col.update_one({'id': id}, {'$set': {'caption': caption}})
+
+    async def get_caption(self, id):
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('caption', None)
