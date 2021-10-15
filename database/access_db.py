@@ -1,6 +1,6 @@
 # (c) @PredatorHackerzZ
 
-from configs import Config
-from database.db import Database
+from sample_config import Config
+from database.database import Database
 
-db = Database(Config.DATABASE_URL, Config.BOT_SESSION_NAME)
+db = Database(Config.MONGODB_URI, Config.SESSION_NAME)
