@@ -42,7 +42,7 @@ async def send_msg(user_id, message):
         return 500, f"{user_id} : {traceback.format_exc()}\n"
 
 
-@Client.on_message(filters.command(["broadcast"]) & filters.user(Config.OWNER_ID) & filters.reply)
+@Client.on_message(filters.command(["broadcast"]) & filters.user(Config.BOT_OWNER) & filters.reply)
 async def broadcast_handler(_, m: Message):
     all_users = await db.get_all_users()
     broadcast_msg = m.reply_to_message
