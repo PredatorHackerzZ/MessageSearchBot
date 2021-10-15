@@ -4,3 +4,4 @@ motor
 aiofiles
 dnspython
 psutil
+sqlalchemy==1.3.23
