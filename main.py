@@ -6,7 +6,7 @@
 
 from database.access_db import db
 from database.add_user import AddUserToDatabase
-from database.forcesub import Forcesub
+from database.forcesub import ForceSub
 from configs import Config
 from pyrogram import Client, filters, idle
 from pyrogram.errors import QueryIdInvalid
