@@ -4,9 +4,6 @@
 # I first made this for @TGBotListBot ...
 # Edit according to your use.
 
-from database.access_db import db
-from database.add_user import AddUserToDatabase
-from database.forcesub import ForceSub
 from configs import Config
 from pyrogram import Client, filters, idle
 from pyrogram.errors import QueryIdInvalid
@@ -31,10 +28,6 @@ User = Client(
 
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
-    await AddUserToDatabase(event, Message)
-    forcesub = await ForceSub(event, Message)
-    if forcesub == 400:
-        return
     await event.reply_text(Config.START_MSG.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("𝐁𝐨𝐭𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/TeleRoidGroup"),
@@ -49,10 +42,6 @@ async def start_handler(_, event: Message):
 
 @Bot.on_inline_query()
 async def inline_handlers(_, event: InlineQuery):
-    await AddUserToDatabase(event, InlineQuery)
-    forcesub = await ForceSub(event, InlineQuery)
-    if forcesub == 400:
-        return
     answers = list()
     # If Search Query is Empty
     if event.query == "":
