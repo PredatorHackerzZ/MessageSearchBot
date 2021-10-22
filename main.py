@@ -122,12 +122,12 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="About_msg"),
-						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gohome")
+						InlineKeyboardButton("👥 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("👥 𝐒𝐩𝐚𝐜𝐞𝐗𝐁𝐨𝐭𝐬", url="https://t.me/Sources_Codes")
 					]
 					[
-						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="About_msg"),
-						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gohome")
+						InlineKeyboardButton("👥 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐚𝐥𝐁𝐨𝐭𝐬", url="https://t.me/UniversalProjects"),
+						InlineKeyboardButton("👥 𝐂𝐨𝐝𝐞𝐗𝐛𝐨𝐭𝐳", url="https://t.me/Codexbotz")
 					]
 				]
 			),
