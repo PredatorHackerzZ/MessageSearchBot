@@ -151,7 +151,7 @@ async def button(bot, cmd: CallbackQuery):
 			parse_mode="html"
 		)
         elif "addbots" in cb_data:
-	    await cmd.message.edit(
+            await cmd.message.edit(
 			text=Config.ADD_BOTS,
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
