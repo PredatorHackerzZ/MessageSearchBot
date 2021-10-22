@@ -98,7 +98,7 @@ async def inline_handlers(_, event: InlineQuery):
 @Bot.on_callback_query()
 async def button(bot, cmd: CallbackQuery):
 	cb_data = cmd.data
-	if "About_msg" in cb_data:
+        if "About_msg" in cb_data:
             await cmd.message.edit(
 			text=Config.ABOUT_BOT_TEXT,
 			disable_web_page_preview=True,
@@ -114,8 +114,8 @@ async def button(bot, cmd: CallbackQuery):
 				]
 			),
 			parse_mode="html"
-		)        
-	elif "Help_msg" in cb_data:
+		)
+        elif "Help_msg" in cb_data:
             await cmd.message.edit(
 			text=Config.ABOUT_HELP_TEXT,
 			disable_web_page_preview=True,
@@ -132,7 +132,7 @@ async def button(bot, cmd: CallbackQuery):
 			),
 			parse_mode="html"
 		)
-	elif "gohome" in cb_data:
+        elif "gohome" in cb_data:
 	    await cmd.message.edit(
 			text=Config.START_MSG.format(cmd.from_user.mention),
 			disable_web_page_preview=True,
