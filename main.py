@@ -123,10 +123,10 @@ async def button(bot, cmd: CallbackQuery):
 				[
 					[
 						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="About_msg"),
-						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gohome")
+						InlineKeyboardButton("𝐆𝐢𝐭𝐡𝐮𝐛 𝐑𝐞𝐩𝐨", url="https://t.me/Moviesflixers_DL")
 					], 
                                         [
-						InlineKeyboardButton("📢 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://t.me/Moviesflixers_DL")
+						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gohome")
 					]
 				]
 			),
