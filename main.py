@@ -133,7 +133,7 @@ async def button(bot, cmd: CallbackQuery):
 			parse_mode="html"
 		)
         elif "gohome" in cb_data:
-	    await cmd.message.edit(
+            await cmd.message.edit(
 			text=Config.START_MSG.format(cmd.from_user.mention),
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
