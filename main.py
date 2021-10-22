@@ -122,11 +122,11 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("📢 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://t.me/Moviesflixers_DL")
-					],
-					[
 						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="About_msg"),
 						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gohome")
+					], 
+                                        [
+						InlineKeyboardButton("📢 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://t.me/Moviesflixers_DL")
 					]
 				]
 			),
@@ -150,7 +150,31 @@ async def button(bot, cmd: CallbackQuery):
 			),
 			parse_mode="html"
 		)
-
+        elif "addbots" in cb_data:
+	    await cmd.message.edit(
+			text=Config.ADD_BOTS,
+			disable_web_page_preview=True,
+			reply_markup=InlineKeyboardMarkup(
+				[
+					[
+						InlineKeyboardButton("👥 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝 👥", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("👥 𝐒𝐩𝐚𝐜𝐞_𝐗_𝐁𝐨𝐭𝐬 👥", url="https://t.me/Sources_Codes")
+					],
+					[
+						InlineKeyboardButton("👥 𝐂𝐨𝐝𝐞𝐗𝐁𝐨𝐭𝐙 👥", url="https://t.me/CodeXBotZSupport"),
+						InlineKeyboardButton("👥 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐚𝐥𝐁𝐨𝐭𝐬 👥", url="https://t.me/JV_Community")
+					], 
+                                        [
+						InlineKeyboardButton("👥 𝐇𝐞𝐢𝐦𝐚𝐧𝐒𝐮𝐩𝐩𝐨𝐫𝐭 👥", url="https://t.me/HeimanSupport"),
+						InlineKeyboardButton("👥 𝐓𝐡𝐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐓𝐞𝐚𝐦 👥", url="https://t.me/TheDeveloperTeam")
+					], 
+                                        [
+						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gohome")
+					]
+				]
+			),
+			parse_mode="html"
+		)
 
 # Start Clients
 Bot.start()
