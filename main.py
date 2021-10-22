@@ -34,7 +34,7 @@ async def start_handler(_, event: Message):
              InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/TeleRoid14")],
             [InlineKeyboardButton("♻ 𝐇𝐞𝐥𝐩", callback_data="Help_msg"),
              InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="About_msg")],
-            [InlineKeyboardButton("𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭𝐋𝐢𝐬𝐭 𝐇𝐞𝐫𝐞",url="https://t.me/TeleRoid14")],
+            [InlineKeyboardButton("𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭𝐋𝐢𝐬𝐭 𝐇𝐞𝐫𝐞", callback_data="addbots")],
             [InlineKeyboardButton("𝐒𝐞𝐚𝐫𝐜𝐡 𝐈𝐧𝐥𝐢𝐧𝐞", switch_inline_query_current_chat=""), InlineKeyboardButton("𝐆𝐨 𝐈𝐧𝐥𝐢𝐧𝐞", switch_inline_query="")]
         ])
     )
@@ -115,7 +115,25 @@ async def button(bot, cmd: CallbackQuery):
 			),
 			parse_mode="html"
 		)
-	elif "Help_msg" in cb_data:
+      elif "addbots" in cb_data:
+            await cmd.message.edit(
+			text=Config.ADD_BOTS,
+			disable_web_page_preview=True,
+			reply_markup=InlineKeyboardMarkup(
+				[
+					[
+						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="About_msg"),
+						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gohome")
+					]
+					[
+						InlineKeyboardButton("👥 𝐀𝐛𝐨𝐮𝐭", callback_data="About_msg"),
+						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gohome")
+					]
+				]
+			),
+			parse_mode="html"
+		)
+      elif "Help_msg" in cb_data:
             await cmd.message.edit(
 			text=Config.ABOUT_HELP_TEXT,
 			disable_web_page_preview=True,
@@ -132,7 +150,7 @@ async def button(bot, cmd: CallbackQuery):
 			),
 			parse_mode="html"
 		)
-	elif "gohome" in cb_data:
+      elif "gohome" in cb_data:
 	    await cmd.message.edit(
 			text=Config.START_MSG.format(cmd.from_user.mention),
 			disable_web_page_preview=True,
