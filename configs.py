@@ -71,3 +71,7 @@ class Config(object):
 <b>𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐅𝐨𝐫 :</b> @TeleRoidGroup ; 𝐌𝐮𝐬𝐭 𝐉𝐨𝐢𝐧 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥. 
 
 𝐌𝐚𝐝𝐞 𝐰𝐢𝐭𝐡 ❤ 𝐅𝐫𝐨𝐦 <a href='https://t.me/PredatorHackerzZ'>@𝐓𝐡𝐞𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝</a>"""
+
+    ADD_BOTS = """<b> 𝐇𝐞𝐲!.... 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭𝐬 𝐇𝐞𝐫𝐞. </b>"""
+
+
