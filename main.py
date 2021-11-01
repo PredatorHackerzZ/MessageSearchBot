@@ -28,10 +28,12 @@ User = Client(
 
 
 @Bot.on_message(filters.private & filters.command("start"))
-async def start_handler(_, event: Message):
-    forcesub = await ForceSub(_, Message)
-    if forcesub == 400:
-        return
+async def start(bot: Client, event: Message):
+    
+    if Config.UPDATES_CHANNEL is not None:
+        back = await Forcesub(event, cmd)
+        if back == 400:
+            return
     await event.reply_text(Config.START_MSG.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("𝐁𝐨𝐭𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/TeleRoidGroup"),
