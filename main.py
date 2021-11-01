@@ -29,7 +29,7 @@ User = Client(
 
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
-    forcesub = await ForceSub(bot, update)
+    forcesub = await ForceSub(_, Message)
     if forcesub == 400:
         return
     await event.reply_text(Config.START_MSG.format(event.from_user.mention),
@@ -101,7 +101,7 @@ async def inline_handlers(_, event: InlineQuery):
 
 @Bot.on_callback_query()
 async def button(bot, cmd: CallbackQuery):
-    forcesub = await ForceSub(bot, update)
+    forcesub = await ForceSub(bot, CallbackQuery)
     if forcesub == 400:
         return
         cb_data = cmd.data
