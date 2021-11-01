@@ -98,7 +98,7 @@ async def inline_handlers(_, event: InlineQuery):
 
 
 @Bot.on_callback_query()
-async def button(bot: Client, event: CallbackQuery):
+async def button(_, event: CallbackQuery):
 
         cb_data = cmd.data
         if "About_msg" in cb_data:
