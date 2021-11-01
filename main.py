@@ -31,7 +31,7 @@ User = Client(
 async def start(bot: Client, event: Message):
     
     if Config.UPDATES_CHANNEL is not None:
-        back = await Forcesub(event, cmd)
+        back = await ForceSub(event, cmd)
         if back == 400:
             return
     await event.reply_text(Config.START_MSG.format(event.from_user.mention),
@@ -102,10 +102,8 @@ async def inline_handlers(_, event: InlineQuery):
 
 
 @Bot.on_callback_query()
-async def button(bot, cmd: CallbackQuery):
-    forcesub = await ForceSub(bot, CallbackQuery)
-    if forcesub == 400:
-        return
+async def button(bot: Client, event: CallbackQuery):
+
         cb_data = cmd.data
         if "About_msg" in cb_data:
             await cmd.message.edit(
