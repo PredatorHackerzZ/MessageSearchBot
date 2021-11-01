@@ -28,10 +28,10 @@ User = Client(
 
 
 @Bot.on_message(filters.private & filters.command("start"))
-async def start(bot: Client, event: Message):
+async def start_handler(_, event: Message):
     
     if Config.UPDATES_CHANNEL is not None:
-        back = await ForceSub(event, cmd)
+        back = await ForceSub(event, Message)
         if back == 400:
             return
     await event.reply_text(Config.START_MSG.format(event.from_user.mention),
