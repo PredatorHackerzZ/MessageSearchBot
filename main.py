@@ -31,7 +31,7 @@ User = Client(
 async def start_handler(_, event: Message):
     
     if Config.UPDATES_CHANNEL is not None:
-        back = await ForceSub(event, Message)
+        back = await ForceSub(cmd, Message)
         if back == 400:
             return
     await event.reply_text(Config.START_MSG.format(event.from_user.mention),
