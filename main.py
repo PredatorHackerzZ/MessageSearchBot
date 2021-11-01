@@ -9,6 +9,7 @@ from pyrogram import Client, filters, idle
 from pyrogram.errors import QueryIdInvalid
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InlineQuery, InlineQueryResultArticle, \
     InputTextMessageContent
+from TeamTeleRoid.forcesub important ForceSub
 
 # Bot Client for Inline Search
 Bot = Client(
@@ -28,6 +29,9 @@ User = Client(
 
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
+    forcesub = await ForceSub(bot, update)
+    if forcesub == 400:
+        return
     await event.reply_text(Config.START_MSG.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("𝐁𝐨𝐭𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/TeleRoidGroup"),
@@ -97,6 +101,9 @@ async def inline_handlers(_, event: InlineQuery):
 
 @Bot.on_callback_query()
 async def button(bot, cmd: CallbackQuery):
+    forcesub = await ForceSub(bot, update)
+    if forcesub == 400:
+        return
         cb_data = cmd.data
         if "About_msg" in cb_data:
             await cmd.message.edit(
