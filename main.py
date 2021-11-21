@@ -54,7 +54,7 @@ async def inline_handlers(_, event: InlineQuery):
                 thumb_url="https://telegra.ph/file/a73b6eccf89106fb918e5.jpg", 
                 input_message_content=InputTextMessageContent(
                     message_text="𝐔𝐬𝐢𝐧𝐠 𝐭𝐡𝐢𝐬 𝐁𝐨𝐭 𝐲𝐨𝐮 𝐜𝐚𝐧 𝐒𝐞𝐚𝐫𝐜𝐡 𝐚𝐥𝐥 𝐭𝐡𝐞 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝 𝐁𝐨𝐭𝐋𝐢𝐬𝐭 𝐁𝐨𝐭 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦.\n\n"
-                                 "**𝐌𝐚𝐝𝐞 𝐛𝐲 𝐭𝐡𝐞 𝐎𝐰𝐧𝐞𝐫 @PredatorHackerzZ**\n**@TheTeleRoid**",
+                                 "**Made With Love By The Owner @TheTeleRoid**",
                     disable_web_page_preview=True
                 ),
                 reply_markup=InlineKeyboardMarkup([
@@ -159,7 +159,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("👥 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝 👥", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("👥 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 👥", url="https://t.me/TeleRoid14"),
 						InlineKeyboardButton("👥 𝐒𝐩𝐚𝐜𝐞_𝐗_𝐁𝐨𝐭𝐬 👥", url="https://t.me/Sources_Codes")
 					],
 					[
@@ -168,7 +168,7 @@ async def button(bot, cmd: CallbackQuery):
 					], 
                                         [
 						InlineKeyboardButton("👥 𝐇𝐞𝐢𝐦𝐚𝐧𝐒𝐮𝐩𝐩𝐨𝐫𝐭 👥", url="https://t.me/HeimanSupport"),
-						InlineKeyboardButton("👥 𝐓𝐡𝐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐓𝐞𝐚𝐦 👥", url="https://t.me/TheDeveloperTeam")
+						InlineKeyboardButton("👥 𝐓𝐆𝐑𝐨𝐛𝐨𝐭_𝐋𝐢𝐬𝐭 👥", url="https://t.me/joinchat/rqSonBIiCP01NWI1")
 					], 
                                         [
 						InlineKeyboardButton("🏠 𝐇𝐨𝐦𝐞", callback_data="gohome")
