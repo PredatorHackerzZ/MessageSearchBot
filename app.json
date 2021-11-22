@@ -1,6 +1,6 @@
 {
-    "name": "This is Inline Channel Messages Search Bot by @AbirHasan2005",
-    "description": "This is Inline Channel Messages Search Bot by @AbirHasan2005in Pyrogram by @AbirHasan2005",
+    "name": "This is Inline BotList Search Bot by @AbirHasan2005 for TeleGram",
+    "description": "This is Inline Channel Messages Search Bot by @PredatorHackerZ in Pyrogram by @AbirHasan2005",
     "keywords": [
         "telegram",
         "channel",
@@ -8,9 +8,9 @@
         "search",
         "bot"
     ],
-    "repository": "https://github.com/AbirHasan2005/Message-Search-Bot",
-    "website": "https://telegram.dog/AbirHasan2005",
-    "success_url": "https://t.me/AHListBot",
+    "repository": "https://github.com/PredatorHackerzZ/MessageSearchBot",
+    "website": "https://telegram.dog/TheTeleRoid",
+    "success_url": "https://t.me/PHListBot",
     "env": {
         "API_ID": {
             "description": "Get this value from my.telegram.org or @TeleORG_Bot"
