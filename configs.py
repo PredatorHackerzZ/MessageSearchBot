@@ -73,6 +73,6 @@ class Config(object):
 
 𝐌𝐚𝐝𝐞 𝐰𝐢𝐭𝐡 ❤ 𝐅𝐫𝐨𝐦 <a href='https://t.me/PredatorHackerzZ'>@𝐓𝐡𝐞𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝</a>"""
 
-    ADD_BOTS = """<b> 𝐇𝐞𝐲!.... 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭𝐬 𝐇𝐞𝐫𝐞. </b>"""
+    ADD_BOTS = """<b>**Heya! {} If You Want to Add Your Bots In @PHListBot then Contact Admin From Below Given Groups**</b>"""
 
 
