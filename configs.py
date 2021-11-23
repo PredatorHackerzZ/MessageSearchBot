@@ -15,21 +15,21 @@ class Config(object):
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
     ABOUT_BOT_TEXT = """<b>**This is a TeleGram BotList Search Bot of @TheTeleRoid And Some Other Bots Available On TeleGram**.
 
-🤖 **My Name**: <a href='https://t.me/PHListBot'>@𝐏𝐇𝐋𝐢𝐬𝐭𝐁𝐨𝐭</a>
+🤖 My Name: <a href='https://t.me/PHListBot'>@𝐏𝐇𝐋𝐢𝐬𝐭𝐁𝐨𝐭</a>
 
-📜 **Language** : <a href='https://www.python.org'>𝐏𝐲𝐭𝐡𝐨𝐧𝟑</a>
+📜 Language : <a href='https://www.python.org'>𝐏𝐲𝐭𝐡𝐨𝐧𝟑</a>
 
-📚 **Library** : <a href='https://docs.pyrogram.org'>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a>
+📚 Library: <a href='https://docs.pyrogram.org'>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a>
 
-📡 **Hosting Server**: <a href='https://heroku.com'>𝐇𝐞𝐫𝐨𝐤𝐮</a>
+📡 Hosting Server: <a href='https://heroku.com'>𝐇𝐞𝐫𝐨𝐤𝐮</a>
 
-👨‍💻 **Developed By**: <a href='https://t.me/PredatorHackerzZ'>@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫𝐇𝐚𝐜𝐤𝐞𝐫𝐳𝐙</a>
+👨‍💻 Developed By: <a href='https://t.me/PredatorHackerzZ'>@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫𝐇𝐚𝐜𝐤𝐞𝐫𝐳𝐙</a>
 
-💢 **Github Repo**: <a href='https://github.com/PredatorHackerzZ/MessageSearchBot'>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a>
+💢 Github Repo: <a href='https://github.com/PredatorHackerzZ/MessageSearchBot'>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a>
 
-👥 **Bot Support**: <a href='https://t.me/teleroid14'>@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐒𝐮𝐩𝐩𝐨𝐫𝐭</a>
+👥 Bot Support: <a href='https://t.me/teleroid14'>@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐒𝐮𝐩𝐩𝐨𝐫𝐭</a>
 
-📢 **Bot Updates**: <a href='https://t.me/teleroidgroup'>@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐆𝐫𝐨𝐮𝐩</a></b>
+📢 Bot Updates: <a href='https://t.me/teleroidgroup'>@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐆𝐫𝐨𝐮𝐩</a></b>
 """
     
     ABOUT_HELP_TEXT = """<b>👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: <a href='https://t.me/PredatorHackerzZ'>@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫𝐇𝐚𝐜𝐤𝐞𝐫𝐳𝐙</a>
@@ -60,15 +60,15 @@ Choose Your Bot Category Here 🤗
 
 **These Bots can Do Multiple things with different Functions**:-
 
-🌀 𝐈 𝐜𝐚𝐧 𝐠𝐞𝐭 𝐲𝐨𝐮 𝐁𝐞𝐬𝐭 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐁𝐨𝐭𝐬 𝐮𝐧𝐝𝐞𝐫 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦 𝐁𝐨𝐭𝐬 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬.
+🌀 I will help you to find Best Telegram Bots.
 
-🌀 𝐈𝐟 𝐮 𝐆𝐞𝐭 𝐚𝐧𝐲 𝐄𝐫𝐫𝐨𝐫 𝐑𝐞𝐠𝐚𝐫𝐝𝐢𝐧𝐠 𝐁𝐨𝐭𝐬 𝐢𝐧 𝐭𝐡𝐞 𝐁𝐨𝐭𝐥𝐢𝐬𝐭 .𝐑𝐞𝐩𝐨𝐫𝐭 : <a href='https://t.me/teleroid14'>@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝟏𝟒</a>.
+🌀 If you Get Any Error In Searching Please Report at **@TeleRoid14**.
 
-🌀 𝐎𝐮𝐫 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : <a href='https://t.me/TeleRoidGroup'>𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐆𝐫𝐨𝐮𝐩</a>.
+🌀 Our Project Channel: <a href='https://t.me/TeleRoidGroup'>@TeleRoidGroup</a>.
 
-🌀🎦 𝐀𝐥𝐥 𝐁𝐨𝐭𝐬 𝐁𝐚𝐬𝐞𝐝 𝐨𝐧 𝐲𝐨𝐮𝐫 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐰𝐢𝐥𝐥 𝐛𝐞 𝐮𝐩𝐥𝐨𝐚𝐝𝐞𝐝. 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐬𝐞𝐧𝐝 𝐲𝐨𝐮𝐫 𝐟𝐞𝐞𝐝𝐛𝐚𝐜𝐤 𝐭𝐨 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩.
+🌀 All Bots Based On Users and Developer Demands. 
 
-📢𝐉𝐨𝐢𝐧 : <a href='https://t.me/TheTeleRoid'>**@TeleRoid14**</a></b>
+📢 Join All Available Telegram Bots : @TGRobot_List.
 """
     
     HOME_TEXT = """
