@@ -13,27 +13,31 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME")
     BOT_OWNER = int(os.environ.get("BOT_OWNER"))
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
-    ABOUT_BOT_TEXT = """<b>𝐓𝐡𝐢𝐬 𝐢𝐬 𝐀 𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝 𝐁𝐨𝐭𝐋𝐢𝐬𝐭 𝐒𝐞𝐚𝐫𝐜𝐡 𝐁𝐨𝐭 𝐎𝐟 @TheTeleRoid 𝐀𝐧𝐝 𝐒𝐨𝐦𝐞 𝐎𝐭𝐡𝐞𝐫 𝐁𝐨𝐭𝐬 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦.
+    ABOUT_BOT_TEXT = """<b>**This is a TeleGram BotList Search Bot of @TheTeleRoid And Some Other Bots Available On TeleGram**.
 
-🤖 𝗠𝘆 𝗡𝗮𝗺𝗲: <a href='https://t.me/PHListBot'>@𝐏𝐇𝐋𝐢𝐬𝐭𝐁𝐨𝐭</a>
+🤖 **My Name**: <a href='https://t.me/PHListBot'>@𝐏𝐇𝐋𝐢𝐬𝐭𝐁𝐨𝐭</a>
 
-📜 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲: <a href='https://www.python.org'>𝐏𝐲𝐭𝐡𝐨𝐧𝟑</a>
+📜 **Language** : <a href='https://www.python.org'>𝐏𝐲𝐭𝐡𝐨𝐧𝟑</a>
 
-📚 𝗟𝗶𝗯𝗿𝗮𝗿𝘆: <a href='https://docs.pyrogram.org'>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a>
+📚 **Library** : <a href='https://docs.pyrogram.org'>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a>
 
-📡 𝗛𝗼𝘀𝘁𝗲𝗱 𝗼𝗻: <a href='https://heroku.com'>𝐇𝐞𝐫𝐨𝐤𝐮</a>
+📡 **Hosting Server**: <a href='https://heroku.com'>𝐇𝐞𝐫𝐨𝐤𝐮</a>
 
-👨‍💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿: <a href='https://t.me/PredatorHackerzZ'>@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫𝐇𝐚𝐜𝐤𝐞𝐫𝐳𝐙</a>
+👨‍💻 **Developed By**: <a href='https://t.me/PredatorHackerzZ'>@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫𝐇𝐚𝐜𝐤𝐞𝐫𝐳𝐙</a>
 
-🌐 𝗚𝗶𝘁𝗵𝘂𝗕 𝗥𝗲𝗽𝗼: <a href='https://github.com/PredatorHackerzZ/MessageSearchBot'>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a>
+💢 **Github Repo**: <a href='https://github.com/PredatorHackerzZ/MessageSearchBot'>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a>
 
-👥 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽: <a href='https://t.me/teleroid14'>@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐒𝐮𝐩𝐩𝐨𝐫𝐭</a>
+👥 **Bot Support**: <a href='https://t.me/teleroid14'>@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐒𝐮𝐩𝐩𝐨𝐫𝐭</a>
 
-📢 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹: <a href='https://t.me/teleroidgroup'>@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐆𝐫𝐨𝐮𝐩</a></b>
+📢 **Bot Updates**: <a href='https://t.me/teleroidgroup'>@𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝𝐆𝐫𝐨𝐮𝐩</a></b>
 """
     
     ABOUT_HELP_TEXT = """<b>👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: <a href='https://t.me/PredatorHackerzZ'>@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫𝐇𝐚𝐜𝐤𝐞𝐫𝐳𝐙</a>
-📕 ᴄʜᴏᴏsᴇ ʙᴏᴛ ᴄᴀᴛᴇɢᴏʀʏ 
+
+Bots are simply Telegram accounts operated by software – not people – and they'll often have AI features. They can do anything – teach, play, search, broadcast, remind, connect, integrate with other services, or even pass commands to the Internet of Things.
+
+Choose Your Bot Category Here 🤗
+
 ☛ RENAMER_BOTS
 ☛ FILE_TO_LINK_BOTS
 ☛ GDRIVE_BOTS
@@ -44,8 +48,16 @@ class Config(object):
 ☛ FILE_CONVERTOR_BOTS
 ☛ INSTAGRAM_BOTS
 ☛ UNZIP_BOTS
+☛ MOVIE_SEARCH_AUTOFILTER_BOT
+☛ SCREENSHOT_BOT
+☛ GOOGLE_TRANSLATION_BOTS
+☛ TORRENT_DOWNLOADER_BOTS
+☛ DMCA_REMOVAL_BOTS
+☛ WATERMARK_BOT
+☛ PDISK_UPLOADER_BOTS
+☛ VIDEO_MERGER_BOTS
 
-𝗧𝗵𝗲𝗿𝗲 𝗮𝗿𝗲 𝗺𝘂𝗹𝘁𝗶𝗽𝗹𝗲 𝘁𝗵𝗶𝗻𝗴𝘀 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 𝗰𝗮𝗻 𝗱𝗼 :-
+**These Bots can Do Multiple things with different Functions**:-
 
 🌀 𝐈 𝐜𝐚𝐧 𝐠𝐞𝐭 𝐲𝐨𝐮 𝐁𝐞𝐬𝐭 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐁𝐨𝐭𝐬 𝐮𝐧𝐝𝐞𝐫 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦 𝐁𝐨𝐭𝐬 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬.
 
@@ -71,7 +83,7 @@ class Config(object):
 
 <b>𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐅𝐨𝐫 :</b> @TeleRoidGroup ; 𝐌𝐮𝐬𝐭 𝐉𝐨𝐢𝐧 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥. 
 
-𝐌𝐚𝐝𝐞 𝐰𝐢𝐭𝐡 ❤ 𝐅𝐫𝐨𝐦 <a href='https://t.me/PredatorHackerzZ'>@𝐓𝐡𝐞𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝</a>"""
+𝐌𝐚𝐝𝐞 𝐰𝐢𝐭𝐡 ❤ 𝐅𝐫𝐨𝐦 <a href='https://t.me/TheTeleRoid'>@TʜᴇTᴇʟᴇʀᴏɪᴅ</a>"""
 
     ADD_BOTS = """<b>**Heya! {} If You Want to Add Your Bots In @PHListBot then Contact Admin From Below Given Groups**</b>"""
 
