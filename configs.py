@@ -44,11 +44,12 @@ Choose Your Bot Category Here 🤗
 ☛ URL_UPLOADER_BOTS
 ☛ GROUP_MANAGER_BOTS
 ☛ ZEE5_DOWNLOADER_BOTS
-☛ YOUTUBE_DOWNLOADER_BOTS
+☛ YOUTUBE_DOWNLOAD_BOTS
 ☛ FILE_CONVERTOR_BOTS
 ☛ INSTAGRAM_BOTS
 ☛ UNZIP_BOTS
-☛ MOVIE_SEARCH_AUTOFILTER_BOT
+☛ MOVIE_SEARCHBOT
+☛ AUTOFILTER_BOT
 ☛ SCREENSHOT_BOT
 ☛ GOOGLE_TRANSLATION_BOTS
 ☛ TORRENT_DOWNLOADER_BOTS
@@ -67,7 +68,7 @@ Choose Your Bot Category Here 🤗
 
 🌀🎦 𝐀𝐥𝐥 𝐁𝐨𝐭𝐬 𝐁𝐚𝐬𝐞𝐝 𝐨𝐧 𝐲𝐨𝐮𝐫 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐰𝐢𝐥𝐥 𝐛𝐞 𝐮𝐩𝐥𝐨𝐚𝐝𝐞𝐝. 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐬𝐞𝐧𝐝 𝐲𝐨𝐮𝐫 𝐟𝐞𝐞𝐝𝐛𝐚𝐜𝐤 𝐭𝐨 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩.
 
-📢𝐉𝐨𝐢𝐧 : <a href='https://t.me/TheTeleRoid'>𝐓𝐡𝐞𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝</a></b>
+📢𝐉𝐨𝐢𝐧 : <a href='https://t.me/TheTeleRoid'>**@TeleRoid14**</a></b>
 """
     
     HOME_TEXT = """
