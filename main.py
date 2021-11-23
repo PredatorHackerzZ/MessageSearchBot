@@ -41,6 +41,17 @@ async def start_handler(_, event: Message):
         ])
     )
 
+@Bot.on_message(filters.private & filters.command("help"))
+async def help_handler(_, event: Message):
+
+    await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ Bʏ", url="https://t.me/MoviesFlixers_DL"),
+             InlineKeyboardButton("🌱 Inspired Channel ", url="https://t.me/TGRobot_List"), 
+             InlineKeyboardButton("👥 About", callback_data="About_msg")],
+            [InlineKeyboardButton("Search Inline", switch_inline_query_current_chat=""), InlineKeyboardButton("Go Inline", switch_inline_query="")]
+        ])
+    )
 
 @Bot.on_inline_query()
 async def inline_handlers(_, event: InlineQuery):
