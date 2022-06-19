@@ -64,18 +64,18 @@ async def inline_handlers(_, event: InlineQuery):
                 description="You Can Search All Bots Available On TeleGram.",
                 thumb_url="https://telegra.ph/file/cb4099b549491a622c481.jpg", 
                 input_message_content=InputTextMessageContent(
-                    message_text="A dream does not become reality through magic; it takes sweat, determination, and hard work."
+                    message_text="A dream does not become reality through magic; it takes sweat, determination, and hard work."\n
 
-                                  "<a>@TheTeleRoid || @Space_X_Bots</a>"
+                                  "<a>@TheTeleRoid || @Space_X_Bots</a>"\n
 
-                                  "<a>🔴 YouTube Channel :</a>"
+                                  "<a>🔴 YouTube Channel :</a>"\n
 
-                                  "<a>https://youtube.com/channel/UCeAteLGyraSil9pErMFTZAg </a>"
+                                  "<a>https://youtube.com/channel/UCeAteLGyraSil9pErMFTZAg </a>"\n
 
-                                  "<a>👥 BotChat : @TeleRoid14 </a>"
+                                  "<a>👥 BotChat : @TeleRoid14 </a>"\n
 
 
-                                  "<a> Follow Our Bot Updates Channel : @TeleRoidGroup</a>",
+                                  "<a> Follow Our Bot Updates Channel : @TeleRoidGroup</a>",\n
                     disable_web_page_preview=True
                 ),
                 reply_markup=InlineKeyboardMarkup([
@@ -189,7 +189,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("👥 TeleRoid Support👥", url="https://t.me/TeleRoid14"),
+						InlineKeyboardButton("👥 TeleRoid Support 👥", url="https://t.me/TeleRoid14"),
 						InlineKeyboardButton("👥 Space X Bots 👥", url="https://t.me/Sources_Codes")
 					],
 					[
